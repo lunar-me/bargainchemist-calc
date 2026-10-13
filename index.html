@@ -198,6 +198,24 @@
       min-height: 15px;
     }
 
+    /* Narrow horizontal strip under the note */
+    .terms {
+      margin-top: 10px;
+      padding-top: 8px;
+      border-top: 1px solid var(--line);
+      text-align: right;
+      font-size: 11px;
+    }
+
+    .terms a {
+      color: var(--bc-blue);
+      font-weight: 600;
+      text-decoration: none;
+      border-bottom: 1px solid rgba(37, 64, 143, 0.4);
+    }
+
+    .terms a:active { color: var(--bc-blue-dark); }
+
     /* ---------- Keypad ---------- */
     .keypad {
       flex: 1 1 auto;
@@ -298,6 +316,10 @@
       </div>
 
       <div class="note" id="note"></div>
+
+      <div class="terms">
+        <a href="https://www.bargainchemist.co.nz/pages/pricebeatguarantee" target="_blank" rel="noopener noreferrer">Terms &amp; Conditions</a>
+      </div>
     </section>
 
     <section class="keypad" id="keypad">
