@@ -238,7 +238,17 @@
       font-size: 10px;
       color: var(--muted);
       padding: 0 16px 12px;
+      line-height: 1.5;
     }
+
+    footer a {
+      color: var(--bc-blue);
+      font-weight: 600;
+      text-decoration: none;
+      border-bottom: 1px solid rgba(37, 64, 143, 0.4);
+    }
+
+    footer a:active { color: var(--bc-blue-dark); }
 
     @media (max-height: 720px) {
       .key { min-height: 52px; font-size: 23px; }
@@ -294,7 +304,10 @@
       <button class="key clear" data-key="clear" type="button" style="grid-column: span 3;">AC&nbsp;&nbsp;Clear all</button>
     </section>
 
-    <footer>Prices in NZD. Extra 10% off the difference applies when the competitor is cheaper.</footer>
+    <footer>
+      Prices in NZD. Extra 10% off the difference applies when the competitor is cheaper.<br />
+      <a href="https://github.com/lunar-me/bargainchemist-calc" target="_blank" rel="noopener noreferrer">View source on GitHub</a>
+    </footer>
   </main>
 
   <script>
