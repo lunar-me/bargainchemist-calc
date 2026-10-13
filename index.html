@@ -77,6 +77,21 @@
       line-height: 1.15;
     }
 
+    /* Title is a link, but deliberately styled to look like plain text. */
+    header a.title,
+    header a.title:visited,
+    header a.title:hover,
+    header a.title:active,
+    header a.title:focus {
+      color: inherit;
+      text-decoration: none;
+      font: inherit;
+      letter-spacing: inherit;
+      outline: none;
+      cursor: pointer;
+      -webkit-tap-highlight-color: transparent;
+    }
+
     header .title small {
       display: block;
       font-weight: 400;
@@ -261,10 +276,7 @@
   <main class="app">
     <header>
       <img class="logo" src="logo_2x.svg" alt="Bargain Chemist" />
-      <div class="title">
-        Price Promise Calculator
-        <small>Match the price + extra 10% off the difference</small>
-      </div>
+      <a class="title" href="https://www.bargainchemist.co.nz/pages/pricebeatguarantee" target="_blank" rel="noopener noreferrer">Price Promise Calculator<small>Match the price + extra 10% off the difference</small></a>
     </header>
 
     <section class="screen" aria-live="polite">
